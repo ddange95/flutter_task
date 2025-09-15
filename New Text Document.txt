@@ -1,0 +1,27 @@
+Cyber Security Information
+
+1. What is Cyber Security?
+Cyber security is the practice of protecting systems, networks, and programs from digital attacks, theft, and damage.
+
+2. Key Concepts:
+- Confidentiality: Ensuring information is accessible only to those authorized.
+- Integrity: Maintaining the accuracy and completeness of data.
+- Availability: Ensuring authorized users have access to information and resources when needed.
+
+3. Common Threats:
+- Malware (viruses, worms, ransomware)
+- Phishing attacks
+- Denial-of-Service (DoS) attacks
+- Man-in-the-middle attacks
+
+4. Best Practices:
+- Use strong, unique passwords.
+- Enable two-factor authentication.
+- Keep software and systems updated.
+- Regularly back up important data.
+- Be cautious with email attachments and links.
+
+5. Useful Resources:
+- https://www.cyber.gov.au/
+- https://www.us-cert.gov/
+- https://www.cyberaware.gov.uk/
