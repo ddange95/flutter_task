@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class MyWidget extends StatelessWidget {
@@ -7,10 +5,20 @@ class MyWidget extends StatelessWidget {
 
   @override
   build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Scaffold(
-        body: Column(
-          children: [_afluttWidget(), cimasWidget(), _dWidget(), _eWidget()],
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            _afluttWidget(),
+            cimasWidget(),
+            _dWidget(),
+            SizedBox(height: 10),
+            _eWidget(),
+            _fWidget(),
+            _gWidget(),
+            SizedBox(height: 10,),
+            _hWidget(),
+          ],
         ),
       ),
     );
@@ -62,7 +70,7 @@ class MyWidget extends StatelessWidget {
             ),
             child: CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage('assets/first.png'),
+              backgroundImage: AssetImage('assets/Scre.png'),
             ),
           ),
         ),
@@ -154,18 +162,170 @@ class MyWidget extends StatelessWidget {
             ),
           ],
         ),
+        SizedBox(height: 10),
         Container(
           color: Colors.orange[100],
           height: 30,
-          width: 320,
+          width: 370,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [Text("data"), Text("data"), Text("data")],
           ),
         ),
-        SizedBox(height: 10,),
-        // Padding(padding: const)
+        SizedBox(height: 10),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                "Products",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w900),
+              ),
+              MaterialButton(
+                onPressed: () {},
+                color: Colors.orange[100],
+                height: 30,
+                minWidth: 150,
+                child: Text("All", style: TextStyle(fontSize: 15)),
+              ),
+            ],
+          ),
+        ),
       ],
+    );
+  }
+
+  _fWidget() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Container(
+          child: Column(
+            children: [
+              Image.asset("assets/Screen.png"),
+              Text("Cotton solid\nslim fil"),
+              Text(
+                "%450",
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          child: Column(
+            children: [
+              Image.asset("assets/Screen.png"),
+              Text("Cotton solid \n slim fil"),
+              Text(
+                "%450",
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          child: Column(
+            children: [
+              Image.asset("assets/Screen.png"),
+              Text("Cotton solid \nslim fil"),
+              Text(
+                "%450",
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  _gWidget() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Container(
+          child: Column(
+            children: [
+              Image.asset("assets/Screen.png"),
+              Text("Cotton solid\n slim fil"),
+              Text(
+                "%450",
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          child: Column(
+            children: [
+              Image.asset("assets/Screen.png"),
+              Text("Cotton solid\n slim fil"),
+              Text(
+                "%450",
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          child: Column(
+            children: [
+              Image.asset("assets/Screen.png"),
+              Text("Cotton solid \nslim fil"),
+              Text(
+                "%450",
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  _hWidget() {
+    return Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Container(
+            height: 40,
+            width: 370,
+            decoration: BoxDecoration(
+              color: Colors.orange[100],
+            ),
+            child: Row(
+              children: [
+                IconButton(
+                  icon: Icon(Icons.home, color: Colors.orange),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 20),
+                IconButton(
+                  icon: Icon(Icons.shopping_cart, color: Colors.black),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 30),
+                IconButton(
+                  icon: Icon(Icons.search, color: Colors.black),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 40),
+                IconButton(
+                  icon: Icon(Icons.favorite_border, color: Colors.black),
+                  onPressed: () {},
+                ),
+                SizedBox(width: 50),
+                IconButton(
+                  icon: Icon(Icons.person, color: Colors.black),
+                  onPressed: () {},
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
