@@ -169,7 +169,7 @@ class MyWidget extends StatelessWidget {
           width: 370,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [Text("data"), Text("data"), Text("data")],
+            children: [Text("about"), Text("reviews"), Text("products")],
           ),
         ),
         SizedBox(height: 10),
